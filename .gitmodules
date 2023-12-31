@@ -1,0 +1,6 @@
+[submodule "backend"]
+	path = backend
+	url = git@github.com:ta-mu-aa/Habit-Manage-backend.git
+[submodule "frontend"]
+	path = frontend
+	url = git@github.com:ta-mu-aa/Habit-Manage-Frontend.git
