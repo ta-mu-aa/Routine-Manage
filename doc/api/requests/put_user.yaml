@@ -1,0 +1,19 @@
+parameters:
+  - name: id
+    in: path
+    required: true
+    schema:
+      type: integer
+    description: ユーザID
+requestBody:
+  content:
+    application/json:
+      schema:
+        type: object
+        required:
+          - name
+        properties:
+          name:
+            type: string
+          age:
+            type: integer

@@ -1,0 +1,7 @@
+parameters:
+    - name: user_id
+      in: path
+      required: true
+      schema:
+        type: integer
+      description: ユーザID
