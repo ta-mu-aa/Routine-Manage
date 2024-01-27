@@ -1,23 +1,23 @@
 get:
   description: ユーザ詳細
   operationId: UserShow
-  $ref: "../requests/get_user.yaml"
+  $ref: "../requests/user/get_user.yaml"
   responses:
     '200':
       description: 成功時
       content:
         application/json:
           schema:
-            $ref: "../responses/get_user.yaml"
+            $ref: "../responses/user/get_user.yaml"
 put:
   description: ユーザ更新
   operationId: UserUpdate
-  $ref: "../requests/put_user.yaml"
+  $ref: "../requests/user/put_user.yaml"
   responses:
     '200':
       description: 成功時
       content:
         application/json:
           schema:
-            $ref: "../responses/put_user.yaml"
+            $ref: "../responses/user/put_user.yaml"
             
