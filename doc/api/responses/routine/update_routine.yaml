@@ -1,0 +1,17 @@
+type: object
+properties:
+  id:
+    type: string
+    format: uuid
+  name:
+    type: string
+    example: 筋トレ
+  daily_target: 
+    type: integer
+    example: 60
+  created_at:
+    type: string
+    format: date-time
+  updated_at:
+    type: string
+    format: date-time

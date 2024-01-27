@@ -1,0 +1,37 @@
+get:
+  tags:
+    - routine
+  description: ルーティン詳細取得
+  operationId: GetRoutineDetail
+  $ref: "../requests/routine/get_routine.yaml"
+  responses:
+    '200':
+      description: 成功時
+      content:
+        application/json:
+          schema:
+            $ref: "../responses/routine/get_routine.yaml"
+            
+patch:
+  tags:
+   - routine
+  description: ルーティン更新
+  operationId: UpdateRoutineDetail
+  $ref: "../requests/routine/update_routine.yaml"
+  responses:
+    '200':
+      description: 成功時
+      content:
+        application/json:
+          schema:
+            $ref: "../responses/routine/update_routine.yaml"
+
+delete:
+  tags:
+   - routine
+  description: ルーティン削除
+  operationId: DeleteRoutineDetail
+  $ref: "../requests/routine/delete_routine.yaml"
+  responses:
+    '204':
+      description: 成功

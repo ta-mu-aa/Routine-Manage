@@ -1,0 +1,7 @@
+parameters:
+  - name: routine_id
+    in: path
+    required: true
+    schema:
+      type: string
+    description: ルーティンID

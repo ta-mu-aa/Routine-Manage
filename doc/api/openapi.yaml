@@ -8,13 +8,13 @@ servers:
 tags:
   - name: "user"
     description: "ユーザーの操作"
-  - name: "rqoutine"
+  - name: "routine"
     description: "ルーティンの操作"
 paths:
   '/api/users/{user_id}':
     $ref: "./paths/user.yaml"
 # Routin API Endpoint
   '/api/routine/':
-    $ref: "./paths/routines.yaml"
-  '/api/routine/{routine_id}':
     $ref: "./paths/routine.yaml"
+  '/api/routine/{routine_id}':
+    $ref: "./paths/routine_id.yaml"
