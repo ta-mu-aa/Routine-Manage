@@ -1,4 +1,6 @@
 get:
+  tags:
+   - user
   description: ユーザ詳細
   operationId: UserShow
   $ref: "../requests/user/get_user.yaml"
@@ -10,6 +12,8 @@ get:
           schema:
             $ref: "../responses/user/get_user.yaml"
 put:
+  tags:
+   - user
   description: ユーザ更新
   operationId: UserUpdate
   $ref: "../requests/user/put_user.yaml"
