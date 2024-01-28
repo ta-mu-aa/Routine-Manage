@@ -1,0 +1,26 @@
+'201':
+  description: Success
+  content:
+    application/json:
+      schema:
+        $ref: "../../components/routine.yaml"
+'400':
+  description: Bad Request
+  content:
+    application/json:
+      schema:
+        type: object
+        properties:
+          error:
+            type: object
+            properties:
+              code:
+                type: string
+                example: Bad Request
+              message: 
+                type: string
+                example: The request is malformed or missing required parameters "name|daily_target" column
+'401':
+  $ref: "../../components/unauthorized_res.yaml"
+'500':
+  $ref: "../../components/internal_server_error_res.yaml"

@@ -1,0 +1,13 @@
+'201':
+  description: Success
+  content:
+    application/json:
+      schema:
+        $ref: "../../components/routine.yaml"
+ 
+'401':
+  $ref: "../../components/unauthorized_res.yaml"
+'404':
+  $ref: "../../components/not_found_res.yaml"
+'500':
+  $ref: "../../components/internal_server_error_res.yaml"

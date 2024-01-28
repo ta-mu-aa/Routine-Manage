@@ -1,0 +1,23 @@
+parameters:
+  - name: routine_id
+    in: path
+    required: true
+    schema:
+      type: string
+    description: ルーティンID
+requestBody:
+  content:
+    application/json:
+      schema:
+        type: object
+        required:
+          - name
+          - daily_target
+        properties:
+          name:
+            type: string
+            description: ルーティンにする行動名
+            maxLength: 100
+          daily_target:
+            description: 1日の目標時間(min)
+            type: integer

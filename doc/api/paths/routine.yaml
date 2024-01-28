@@ -1,0 +1,31 @@
+get:
+  tags:
+   - routine
+  description: ルーティン一覧取得
+  operationId: GetRoutineList
+  responses:
+    '200':
+      description: Success
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              routines:
+                type: array
+                items:
+                  $ref: "../components/routine.yaml"
+    '401':
+      $ref: "../components/unauthorized_res.yaml"
+    '500':
+      $ref: "../components/internal_server_error_res.yaml"        
+
+post:
+  tags:
+   - routine
+  description: ルーティン新規登録
+  operationId: CreateRoutine
+  $ref: "../requests/routine/create_routine.yaml"
+  responses:
+    $ref: "../responses/routine/create_routine.yaml"
+  

@@ -1,0 +1,19 @@
+parameters:
+  - name: routine_id
+    in: path
+    required: true
+    schema:
+      type: string
+    description: ルーティンID
+requestBody:
+  content:
+    application/json:
+      schema:
+        type: object
+        properties:
+          name:
+            type: string
+            example: 筋トレ
+          daily_target:
+            type: integer
+            example: 60
