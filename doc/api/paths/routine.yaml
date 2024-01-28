@@ -5,7 +5,7 @@ get:
   operationId: GetRoutineList
   responses:
     '200':
-      description: 成功時
+      description: Success
       content:
         application/json:
           schema:
@@ -15,16 +15,17 @@ get:
                 type: array
                 items:
                   $ref: "../components/routine.yaml"
+    '401':
+      $ref: "../components/unauthorized_res.yaml"
+    '500':
+      $ref: "../components/internal_server_error_res.yaml"        
 
 post:
   tags:
    - routine
   description: ルーティン新規登録
   operationId: CreateRoutine
+  $ref: "../requests/routine/create_routine.yaml"
   responses:
-    '201':
-      description: 成功時
-      content:
-        application/json:
-          schema:
-            $ref: "../responses/routine/create_routine.yaml"
+    $ref: "../responses/routine/create_routine.yaml"
+  

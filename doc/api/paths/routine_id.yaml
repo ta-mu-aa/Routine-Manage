@@ -5,12 +5,7 @@ get:
   operationId: GetRoutineDetail
   $ref: "../requests/routine/get_routine.yaml"
   responses:
-    '200':
-      description: 成功時
-      content:
-        application/json:
-          schema:
-            $ref: "../responses/routine/get_routine.yaml"
+    $ref: "../responses/routine/get_routine.yaml"
             
 patch:
   tags:
@@ -19,12 +14,7 @@ patch:
   operationId: UpdateRoutineDetail
   $ref: "../requests/routine/update_routine.yaml"
   responses:
-    '200':
-      description: 成功時
-      content:
-        application/json:
-          schema:
-            $ref: "../responses/routine/update_routine.yaml"
+    $ref: "../responses/routine/update_routine.yaml"
 
 delete:
   tags:
@@ -33,5 +23,4 @@ delete:
   operationId: DeleteRoutineDetail
   $ref: "../requests/routine/delete_routine.yaml"
   responses:
-    '204':
-      description: 成功
+    $ref: "../responses/routine/delete_routine.yaml"

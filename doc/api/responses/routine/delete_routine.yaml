@@ -1,10 +1,5 @@
-'201':
-  description: Success
-  content:
-    application/json:
-      schema:
-        $ref: "../../components/routine.yaml"
- 
+'204':
+      description: 成功
 '401':
   $ref: "../../components/unauthorized_res.yaml"
 '404':
