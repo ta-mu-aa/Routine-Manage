@@ -1,0 +1,15 @@
+description: Unauthorized
+content:
+  application/json:
+    schema:
+      type: object
+      properties:
+        error:
+          type: object
+          properties:
+            code:
+              type: string
+              example: Unauthorized
+            message: 
+              type: string
+              example: Authentication failed. You don't have permission.
